@@ -1,8 +1,6 @@
-# docker
+# docker项目
 
-1.基于alpine构建node镜像
+### 基于alpine制作node基础镜像
 
-```
-    cd alpine-node-small && docker build --network host -t alpine-node-small:12.13.0 . 
-```
+### 制作yapi镜像一键部署
 
