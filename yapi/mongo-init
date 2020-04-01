@@ -32,3 +32,6 @@ db.user.insert(
         "__v" : NumberInt(0)
     }
 )
+
+// user : admin@admin.com
+// pwd  : 12345678
