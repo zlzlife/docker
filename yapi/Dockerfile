@@ -31,3 +31,5 @@ COPY --from=build-base /app/ /app/
 COPY ./config.json /app/
 
 CMD node /app/vendors/server/app.js
+
+# docker build --network host -t yapi:1.8.8 .
