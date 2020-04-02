@@ -14,7 +14,7 @@
 ```
 
 ### docker-compose一键部署yapi
-1. 进入yapi,修改config.json, docker-compose.yml文件
+1. 进入yapi目录修改config.json文件
 
 2. 执行docker-compose.yml
 
