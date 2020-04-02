@@ -22,4 +22,3 @@
     docker pull zlzlife/yapi:1.8.8 
 ```
 
-### docker-compose一键自动化部署
