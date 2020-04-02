@@ -11,7 +11,7 @@ docker run -d -p 27017:27017 --name yapi-mongo --restart=always zlzlife/yapi-mon
 
 - 下载config.json
     ```
-    wget https://raw.githubusercontent.com/zlzlife/docker/master/yapi/config.json -O /config.json
+    wget https://raw.githubusercontent.com/zlzlife/docker/master/yapi/config.json -O ~/config.json
     ```
 
 - 修改配置
@@ -40,7 +40,7 @@ docker run -d -p 27017:27017 --name yapi-mongo --restart=always zlzlife/yapi-mon
 ## 运行容器
 
 ```
- docker run -d -p 3000:3000 -v /config.json:/app/config.json --name yapi zlzlife/yapi:1.8.8
+docker run -d -p 3000:3000 -v ~/config.json:/app/config.json --name yapi zlzlife/yapi:1.8.8
 ```
 
 ## 访问
