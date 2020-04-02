@@ -28,6 +28,12 @@ docker image prune -f
 
 # 清理所有未使用镜像
 docker image prune -a
+
+# 保存镜像
+docker save -o ubuntu.tar ubuntu:18.04
+
+# 加载镜像
+docker load -i ubuntu.tar  
 ```
 
 - container相关命令
