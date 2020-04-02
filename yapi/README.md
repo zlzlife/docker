@@ -22,10 +22,7 @@ docker run -d -p 27017:27017 --name yapi-mongo --restart=always zlzlife/yapi-mon
       "db": {
         "servername": "192.168.x.xx",
         "DATABASE": "yapi",
-        "port": 27017,
-        "user": "test1",
-        "pass": "test1",
-        "authSource": ""
+        "port": 27017
       },
       "mail": {
         "enable": true,
