@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  yapi:
+    image: zlzlife/yapi:1.8.8
+    container_name: yapi
+    ports:
+      - 3000:3000
+    restart: always
+    depends_on:
+      - yapi-mongo
+    volumes:
+      - ./config.json:/app/config.json
+
+  yapi-mongo:
+    image: zlzlife/yapi-mongo:1.0.0
+    container_name: yapi-mongo
+    ports:
+      - 27017:27017
+    restart: always
+#    volumes:
+#      - ~/data/yapi/mongodb:/data/db
