@@ -1,5 +1,4 @@
-# docker项目
-
+# 一起来玩Docker吧
 
 ### 制作yapi-mongo基础镜像
 
@@ -19,7 +18,7 @@
 2. 执行docker-compose.yml
 
 ```
-    cd yapi && docker-compose up -d
+   cd yapi && docker-compose up -d
 ```
 
 3. 浏览器访问 http://localhost:3000
