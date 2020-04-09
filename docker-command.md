@@ -55,6 +55,9 @@ docker container prune -f
 
 # 清理掉所有容器
 docker rm $(docker ps -aq) 
+
+# 列出容器及其size
+docker ps -s
 ```
 
 - volume相关命令
