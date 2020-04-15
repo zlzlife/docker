@@ -46,5 +46,5 @@ docker run -d -p 3000:3000 -v ~/config.json:/app/config.json --name yapi zlzlife
 ## 访问
 - 浏览器打开 http://localhost:3000
 - 初始登录的账号密码为:
-  - uesr : admin@admin.com
+  - user : admin@admin.com
   - pwd : 12345678
