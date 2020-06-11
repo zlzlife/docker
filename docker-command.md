@@ -12,7 +12,7 @@ docker run -d --name local-mysql -p 3306:3306 --restart=always -e MYSQL_ROOT_PAS
 docker run --name redis -d -p 6379:6379 --restart=always redis:latest 
 
 # 运行执行容器结束后删除
-docker run --rm ubuntu:18.04 ls
+docker run --rm ubuntu:18.04
 
 # 分配一个终端运行结束后删除
 docker run --rm -it ubuntu:18.04
