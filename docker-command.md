@@ -37,6 +37,9 @@ docker save -o ubuntu.tar ubuntu:18.04
 
 # 加载镜像
 docker load -i ubuntu.tar  
+
+# 重命名容器名称
+docker oldname newname
 ```
 
 - container相关命令
