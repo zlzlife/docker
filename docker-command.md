@@ -61,6 +61,9 @@ docker rm $(docker ps -aq)
 
 # 列出容器及其size
 docker ps -s
+
+# 修改容器重启策略
+docker update --restart no containerId
 ```
 
 - volume相关命令
