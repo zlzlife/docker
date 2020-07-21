@@ -90,3 +90,15 @@ docker login -u user -p pass hub.docker.com
 ```
 docker logout hub.docker.com 
 ```
+
+- pull代理
+
+```
+# 创建config文件
+sudo vim /etc/systemd/system/docker.service.d/http-proxy.conf
+
+# 写入代理
+# [Service]
+#        Environment="HTTP_PROXY=http://127.0.0.1:1087/"
+#        Environment="HTTPS_PROXY=http://127.0.0.1:1087/"
+```
