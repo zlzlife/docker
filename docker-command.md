@@ -64,6 +64,7 @@ docker ps -s
 
 # 修改容器重启策略
 docker update --restart no containerId
+docker update --restart always containerId
 ```
 
 - volume相关命令
