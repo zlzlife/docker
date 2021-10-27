@@ -1,8 +1,8 @@
 # 第一阶段(下载源码,生成node_modules)
-FROM node:12.13.0 as build-base
+FROM node:14.18.1 as build-base
 
 # yapi版本
-ENV VERSION=1.8.8
+ENV VERSION=1.10.2
 
 # 指定工作目录
 WORKDIR /app
@@ -22,7 +22,7 @@ RUN apt-get update && \
 RUN cd /app/vendors/ && yarn config set registry https://registry.npm.taobao.org && yarn --production
 
 # 第二阶段(生成最终镜像)
-FROM zlzlife/alpine-node-small:12.13.0
+FROM node:14.18.1-alpine3.13
 
 WORKDIR /app
 
@@ -32,4 +32,4 @@ COPY ./config.json /app/
 
 CMD node /app/vendors/server/app.js
 
-# docker build --network host -t yapi:1.8.8 .
+# docker build --network host -t yapi:1.10.2 .
